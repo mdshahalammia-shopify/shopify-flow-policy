@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Shopify Flow Manager</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    h1 { color: #0284c7; }
+    h2 { color: #0f172a; margin-top: 24px; }
+    p, li { font-size: 15px; color: #475569; }
+    ul { padding-left: 20px; }
+    .footer { margin-top: 40px; border-top: 1px solid #e2e8f0; padding-top: 16px; font-size: 13px; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy for Shopify Flow Manager</h1>
+  <p><strong>Effective Date:</strong> September 29, 2026</p>
+
+  <p>Shopify Flow Manager ("we", "our", or "the extension") is committed to protecting your privacy. This Privacy Policy explains how information is handled when you use our Chrome Extension.</p>
+
+  <h2>1. Data Collection & Usage</h2>
+  <p>Shopify Flow Manager functions primarily as a client-side productivity tool designed to help merchants optimize catalog hierarchy, automate inventory sync, and streamline product SEO. We collect minimal operational data:</p>
+  <ul>
+    <li><strong>Shopify Store Information:</strong> When you execute automation workflows, store domain and administrative contact details are retrieved via authorized Shopify GraphQL Admin APIs solely to provide product updates and customer support.</li>
+    <li><strong>API Tokens & Credentials:</strong> Your Shopify Admin API Access Token and third-party AI keys (Gemini, OpenAI, DeepSeek, Groq, OpenRouter) are saved strictly inside your local browser via <code>chrome.storage.local</code>. These credentials never pass through external intermediary servers.</li>
+    <li><strong>Product Data:</strong> Product titles, descriptions, tags, and inventory counts are transmitted directly from your browser to Shopify's official GraphQL endpoint and the designated AI provider you choose.</li>
+  </ul>
+
+  <h2>2. Third-Party Services</h2>
+  <p>Depending on your configured settings, the extension may communicate with:</p>
+  <ul>
+    <li><strong>Shopify Admin API:</strong> To create collections, manage menus, and update product listings.</li>
+    <li><strong>AI Providers (Google Gemini, OpenAI, DeepSeek, Groq, OpenRouter):</strong> Only product metadata explicitly sent for optimization is processed in real time by the selected AI engine.</li>
+    <li><strong>Internal Logging (Google Sheets API):</strong> Basic merchant interaction logs (store domain and action timestamp) are recorded to prevent abuse and deliver feature improvements.</li>
+  </ul>
+
+  <h2>3. Data Protection & Sharing</h2>
+  <p>We do not sell, rent, trade, or monetize your store data or customer records to any third parties or data brokers under any circumstances.</p>
+
+  <h2>4. User Rights & Data Removal</h2>
+  <p>You can remove all locally stored API keys and tokens at any time simply by clearing the input fields or uninstalling the Chrome Extension from your browser.</p>
+
+  <h2>5. Contact Us</h2>
+  <p>If you have any questions regarding this Privacy Policy, please reach out via developer email at: <strong>mdshahalammia520@gmail.com</strong></p>
+
+  <div class="footer">
+    &copy; 2026 Shopify Flow Manager. All rights reserved.
+  </div>
+</body>
+</html>
