@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Guide & Video Tutorial - Shopify Flow Manager</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #cbd5e1;
+      background-color: #0f172a;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1 { color: #38bdf8; font-size: 28px; margin-bottom: 6px; }
+    h2 { color: #f1f5f9; border-bottom: 1px solid #334155; padding-bottom: 8px; margin-top: 36px; font-size: 20px; }
+    p, li { font-size: 15px; color: #94a3b8; }
+    code { background: #1e293b; color: #38bdf8; padding: 2px 6px; border-radius: 4px; font-size: 13px; font-family: monospace; }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #020617;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      margin: 20px 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .scope-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.1);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin: 3px;
+      font-family: monospace;
+      font-size: 13px;
+    }
+    .btn {
+      display: inline-block;
+      background: #0284c7;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .btn:hover { background: #0369a1; }
+  </style>
+</head>
+<body>
+
+  <h1>Shopify Flow Manager — Official Setup Guide</h1>
+  <p>Follow this step-by-step documentation and tutorial video to safely connect your store and automate catalog hierarchies, bulk inventory sync, and multi-model AI SEO.</p>
+
+  <!-- Video Tutorial Section -->
+  <h2>1. Video Walkthrough</h2>
+  <div class="video-container">
+    <!-- Replace YOUR_VIDEO_ID with your YouTube video ID once recorded -->
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Shopify Flow Manager Video Guide" allowfullscreen></iframe>
+  </div>
+
+  <!-- Shopify Custom App & Permissions -->
+  <h2>2. Shopify Custom App Setup & Permissions</h2>
+  <p>To automate collections, menus, and stock via Shopify GraphQL Admin API, create a private Custom App with these permissions:</p>
+
+  <ol>
+    <li>Log in to your <strong>Shopify Admin</strong>.</li>
+    <li>Go to <strong>Settings</strong> &gt; <strong>Apps and sales channels</strong>.</li>
+    <li>Click <strong>Develop apps</strong> (or <em>Allow custom app development</em>) &gt; <strong>Create an app</strong>.</li>
+    <li>Name the app: <code>Shopify Flow Manager</code>.</li>
+    <li>Click <strong>Configure Admin API scopes</strong> and select these scopes:</li>
+  </ol>
+
+  <div class="card">
+    <h3 style="color: #f8fafc; margin-top: 0; font-size: 16px;">Mandatory Admin API Scopes:</h3>
+    <p><strong>1. Smart Collections &amp; Sales Channels (Auto-Publish):</strong><br>
+      <span class="scope-badge">read_products</span>
+      <span class="scope-badge">write_products</span>
+      <span class="scope-badge">read_publications</span>
+      <span class="scope-badge">write_publications</span>
+    </p>
+    <p><strong>2. 3-Tier Mega Menu &amp; Navigation:</strong><br>
+      <span class="scope-badge">read_online_store_navigation</span>
+      <span class="scope-badge">write_online_store_navigation</span>
+    </p>
+    <p><strong>3. Bulk SKU Generator &amp; Inventory Sync:</strong><br>
+      <span class="scope-badge">read_inventory</span>
+      <span class="scope-badge">write_inventory</span>
+    </p>
+  </div>
+
+  <ol start="6">
+    <li>Click <strong>Save</strong>, then click <strong>Install app</strong>.</li>
+    <li>Copy the revealed <strong>Admin API access token</strong> (starts with <code>shpat_...</code>) and paste it into the extension popup.</li>
+  </ol>
+
+  <!-- AI API Keys -->
+  <h2>3. Universal Multi-AI Engine Setup</h2>
+  <p>Connect your preferred AI provider directly. Your API keys are stored strictly in your local browser:</p>
+  <ul>
+    <li><strong>Google Gemini (Recommended &amp; 100% Free):</strong> Get your free API key at <a href="https://aistudio.google.com" target="_blank" style="color: #38bdf8;">aistudio.google.com</a> (No credit card required).</li>
+    <li><strong>OpenAI (ChatGPT / GPT-4o):</strong> Create an API key at <a href="https://platform.openai.com/api-keys" target="_blank" style="color: #38bdf8;">platform.openai.com/api-keys</a>.</li>
+    <li><strong>Groq (Ultra-Fast):</strong> Generate your key at <a href="https://console.groq.com/keys" target="_blank" style="color: #38bdf8;">console.groq.com</a>.</li>
+    <li><strong>DeepSeek (V3 / R1):</strong> Get your key from <a href="https://platform.deepseek.com/api_keys" target="_blank" style="color: #38bdf8;">platform.deepseek.com</a>.</li>
+  </ul>
+
+  <!-- Developer Contact -->
+  <h2>4. Need Custom Shopify Development?</h2>
+  <div class="card" style="border-color: #0284c7;">
+    <h3 style="color: #f8fafc; margin-top: 0;">Work Directly with the Developer</h3>
+    <p>Need custom Liquid theme sections, Metafields/Metaobjects architecture, 3rd-party API integrations, or speed optimization?</p>
+    <a href="https://www.linkedin.com/in/md-shah-alam-mia/" target="_blank" class="btn">Connect on LinkedIn ↗</a>
+  </div>
+
+</body>
+</html>
